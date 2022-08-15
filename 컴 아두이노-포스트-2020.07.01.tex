@@ -1,0 +1,231 @@
+%	------------------------------------------------------------------------------
+%	2020년 6월 28일 첫 작업
+%
+%
+
+%	\documentclass[25pt, a1paper]{tikzposter}
+%	\documentclass[25pt, a0paper, landscape]{tikzposter}
+	\documentclass[20pt, a1paper ]{tikzposter}
+
+%	\documentclass[25pt, a1paper]{tikzposter}
+%	\documentclass[25pt, a1paper]{tikzposter}
+%	\documentclass[25pt, a1paper]{tikzposter}
+
+% 	12pt  14pt 17pt  20pt  25pt
+%
+%	a0 a1 a2
+%
+%	landscape  portrait
+%
+
+	%% Tikzposter is highly customizable: please see
+	%% https://bitbucket.org/surmann/tikzposter/downloads/styleguide.pdf
+
+	%	========================================================== 	Package
+		\usepackage{kotex}						% 한글 사용
+
+
+%% Available themes: see also
+%% https://bitbucket.org/surmann/tikzposter/downloads/themes.pdf
+%	\usetheme{Default}
+%	\usetheme{Rays}
+%	\usetheme{Basic}
+	\usetheme{Simple}
+%	\usetheme{Envelope}
+%	\usetheme{Wave}
+%	\usetheme{Board}
+%	\usetheme{Autumn}
+%	\usetheme{Desert}
+
+%% Further changes to the title etc is possible
+%	\usetitlestyle{Default}			%
+%	\usetitlestyle{Basic}				%
+%	\usetitlestyle{Empty}				%
+%	\usetitlestyle{Filled}				%
+%	\usetitlestyle{Envelope}			%
+%	\usetitlestyle{Wave}				%
+%	\usetitlestyle{verticalShading}	%
+
+
+%	\usebackgroundstyle{Default}
+%	\usebackgroundstyle{Rays}
+%	\usebackgroundstyle{VerticalGradation}
+%	\usebackgroundstyle{BottomVerticalGradation}
+%	\usebackgroundstyle{Empty}
+
+%	\useblockstyle{Default}
+%	\useblockstyle{Basic}
+%	\useblockstyle{Minimal}		% 이것은 간단함
+%	\useblockstyle{Envelope}		% 
+%	\useblockstyle{Corner}		% 사각형
+%	\useblockstyle{Slide}			%	띠모양  
+	\useblockstyle{TornOut}		% 손그림모양
+
+
+	\usenotestyle{Default}
+%	\usenotestyle{Corner}
+%	\usenotestyle{VerticalShading}
+%	\usenotestyle{Sticky}
+
+%	\usepackage{fontspec}
+%	\setmainfont{FreeSerif}
+%	\setsansfont{FreeSans}
+
+%	------------------------------------------------------------------------------ 제목
+
+	\title{아두이노 }
+
+	\author{2020년7월 }
+
+
+	%% Optional title graphic
+	%\titlegraphic{\includegraphics[width=7cm]{IMG_1934}}
+	%% Uncomment to switch off tikzposter footer
+	% \tikzposterlatexaffectionproofoff
+
+\begin{document}
+
+	\maketitle
+
+	\begin{columns}
+
+		\column{0.5}
+
+%	------------------------------------------------------------------------------
+			\block{■  개요}
+			{
+					\setlength{\leftmargini}{7em}
+					\setlength{\labelsep} {1em}
+				\begin{LARGE}
+					\begin{itemize}
+					\item [목적] 재미나게 흥나게
+					\item [내용] 
+					\end{itemize}
+				\end{LARGE}
+			}
+
+
+%	------------------------------------------------------------------------------
+		\block{■ 설치 }
+		{
+			\setlength{\leftmargini}{7em}			
+			\setlength{\labelsep}{1em} % horizontal space from bullet to text (as needed)
+%			\setlength{\partopsep}{0pt}
+%			\setlength{\parskip}{0pt}
+%			\setlength{\parsep}{0pt}
+%			\setlength{\topsep}{0pt}
+%			\setlength{\itemsep}{0pt}
+%			\setlength{\itemindent}{4em} % summary indentation: par 1.25cm + bullet 0.63 + magic number picked empirically (0.25cm)
+%			\setlength{\leftmargin}{0pt}			
+
+			\begin{LARGE}
+			\begin{itemize}
+			\item [이름]
+			\item [전번]
+			\item [주소] 
+			\end{itemize}
+			\end{LARGE}
+
+		}
+
+%	------------------------------------------------------------------------------
+		\block{■ 버전 }
+		{
+			\setlength{\leftmargini}{5em}			
+			\setlength{\labelsep}{1em} % horizontal space from bullet to text (as needed)
+			\begin{LARGE}
+			\begin{itemize}
+			\item [1.] 
+			\item [2.] 
+			\item [3.] 
+			\item [4.] 
+			\item [5.] 
+			\item [6.] 
+			\item [7.] 
+			\end{itemize}
+			\end{LARGE}
+
+		}		
+
+
+
+	%	====== ====== ====== ====== ====== 
+		\column{0.5}
+
+%	------------------------------------------------------------------------------ 참고문헌
+		\block{■ 참고문헌 }
+			{				
+			\setlength{\leftmargini}{9em}			
+			\setlength{\labelsep}{1em} % horizontal space from bullet to text (as needed)
+
+			\begin{LARGE}
+			\begin{itemize}
+			\item [6월 04일]
+			\item [6월 11일]
+			\item [6월 18일]
+			\item [6월 25일]
+			\end{itemize}
+			\end{LARGE}
+		}
+
+
+%	------------------------------------------------------------------------------ 책
+		\block{■ 책 : 두근두근 아두이오 공작소 }
+			{				
+			\setlength{\leftmargini}{9em}			
+			\setlength{\labelsep}{1em} % horizontal space from bullet to text (as needed)
+
+			\begin{LARGE}
+			\begin{itemize}
+			\item [주제목] 두근두근 아두이오 공작소 
+			\item [부제목] 25가지 기발한 실습 예제로 배우는 아두이노 입문
+			\item [지은이] 마크 게디스
+			\item [옮긴이] 이하영
+			\item [출판사] 인사이트
+			\item [출판일] 2017년 8월 18일
+			\item [도서관] 2020.06.19 수정 569 17
+
+			\end{itemize}
+			\end{LARGE}
+		}
+
+
+%	------------------------------------------------------------------------------ 책
+		\block{■ 책 : 아두이노 for 인트렉티브 뮤직 }
+			{				
+			\setlength{\leftmargini}{9em}			
+			\setlength{\labelsep}{1em} % horizontal space from bullet to text (as needed)
+
+			\begin{LARGE}
+			\begin{itemize}
+			\item [주제목] 아두이노 for 인트렉티브 뮤직 
+			\item [지은이] 채진욱
+			\item [출판사] 인사이트
+			\item [출판일] 초판 2011년3월10일 2쇄 2012년6월20일
+			\item [도서관] 2020.06.19 수정 569 15
+
+			\end{itemize}
+			\end{LARGE}
+		}
+
+
+	\end{columns}
+
+
+
+
+\end{document}
+
+
+		\begin{huge}
+		\end{huge}
+
+		\begin{LARGE}
+		\end{LARGE}
+
+		\begin{Large}
+		\end{Large}
+
+		\begin{large}
+		\end{large}
+
